@@ -1,0 +1,8 @@
+nav 
+	ul
+		each key, value in {"CSS": "index", "Синтаксис CSS": "#", "Вставка CSS": "#", "CSS текст": "#", "CSS шрифт": "css_font", "Блоки": "css_block"}
+			li
+				if key == active_page
+					a(href = key + ".html", class = "active")= value
+				else 
+					a(href=key + ".html")= value

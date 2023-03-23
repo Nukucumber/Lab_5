@@ -1,0 +1,311 @@
+@inport css_font;
+body {
+  background-color: #164b69;
+  font-size: 14px;
+  font-family: arial;
+}
+body p {
+  text-align: justify;
+  line-height: 2;
+  text-indent: 20px;
+  word-spacing: 1em;
+}
+body .main {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e3e3e3;
+  min-height: 700px;
+  min-width: 700px;
+}
+body .main nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+body .main nav ul a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  width: auto;
+  margin: 20px;
+  padding: 0;
+}
+body .main nav ul a:hover {
+  background-color: #dcdcdc;
+}
+body .main nav ul a.active {
+  background-color: #dcdcdc;
+}
+body .grid_container_index {
+  display: grid;
+  grid-gap: 8px;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  border: #000 solid thin;
+}
+body .grid_container_index div {
+  border: #000 thin solid;
+}
+body .grid_container_index .text1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+body .grid_container_index .text2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+body .grid_container_index .img1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body .grid_container_index .video1 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+body .grid_container_index img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body .grid_container_index p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body video {
+  width: 100%;
+  margin: 10px auto;
+  padding: 0;
+}
+@media (max-width: 600px) {
+  body .main {
+    font-size: 10px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    min-width: 0;
+  }
+  body .main nav ul {
+    flex-wrap: wrap;
+  }
+  body .main .grid_container_index .text1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  body .main .grid_container_index .text2 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  body .main .grid_container_index .img1 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  body .main .grid_container_index .video1 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
+body .grid_container_css_font {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  border: #000 solid thin;
+  grid-gap: 0.99%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr repeat(3, -webkit-max-content) 0.5fr;
+  grid-template-rows: 2fr repeat(3, max-content) 0.5fr;
+}
+body .grid_container_css_font div {
+  border: #000 thin solid;
+}
+body .grid_container_css_font .ref1 {
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+body .grid_container_css_font .text1 {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+body .grid_container_css_font .text2 {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+body .grid_container_css_font .text3 {
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+body .grid_container_css_font .text4 {
+  grid-column: 1/4;
+  grid-row: 5/6;
+}
+body .grid_container_css_font .img1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+body .grid_container_css_font .img2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body .grid_container_css_font .img3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+body .grid_container_css_font img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body .grid_container_css_font p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 600px) {
+  body .main {
+    font-size: 10px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    min-width: 0;
+  }
+  body .main nav ul {
+    flex-wrap: wrap;
+  }
+  body .main .grid_container_css_font .text1 {
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+  body .main .grid_container_css_font .text2 {
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+  body .main .grid_container_css_font .text3 {
+    grid-column: 1/4;
+    grid-row: 6/7;
+  }
+  body .main .grid_container_css_font .text4 {
+    grid-column: 1/4;
+    grid-row: 7/8;
+  }
+  body .main .grid_container_css_font .img1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  body .main .grid_container_css_font .img2 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  body .main .grid_container_css_font .img3 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+}
+body .grid_container_css_block {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  border: #000 solid thin;
+  grid-gap: 1%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-colums: repeat(4, 1fr);
+}
+body .grid_container_css_block div {
+  border: #000 solid thin;
+}
+body .grid_container_css_block .text1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body .grid_container_css_block .text2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body .grid_container_css_block .text3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+body .grid_container_css_block .text4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+body .grid_container_css_block .img1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+body .grid_container_css_block .img2 {
+  grid-column: 2/3;
+  grid-row: 3/5;
+}
+body .grid_container_css_block img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body .grid_container_css_block p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 600px) {
+  body .main {
+    font-size: 10px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    min-width: 0;
+  }
+  body .main nav ul {
+    flex-wrap: wrap;
+  }
+  body .main .grid_container_css_block {
+    grid-template-rows: 1fr repeat(2, -webkit-min-content) 1fr repeat(2, -webkit-min-content);
+    grid-template-rows: 1fr repeat(2, min-content) 1fr repeat(2, min-content);
+  }
+  body .main .grid_container_css_block .text1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .main .grid_container_css_block .text2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .main .grid_container_css_block .text3 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .main .grid_container_css_block .text4 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .main .grid_container_css_block .img1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body .main .grid_container_css_block .img2 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}

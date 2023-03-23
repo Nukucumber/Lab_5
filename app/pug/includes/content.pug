@@ -1,0 +1,19 @@
+-var i = 1
+each value in textlist
+	div(class= "text" + i)
+		p=value
+	- i++
+- i = 1
+each key, value in reflist
+	a(href=key class="ref"+i)=value
+	- i++
+- i = 1
+each value in imglist
+	div(class= "img" + i)
+		img(src= value)
+	- i++
+- i = 1
+each value in videolist
+	div(class= "video" + i)
+		video(src= value controls)
+	- i++
