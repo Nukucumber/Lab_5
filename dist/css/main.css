@@ -45,10 +45,6 @@ body .grid_container_index {
   width: 100%;
   margin: auto;
   padding: 0;
-  border: #000 solid thin;
-}
-body .grid_container_index div {
-  border: #000 thin solid;
 }
 body .grid_container_index .text1 {
   grid-column: 1/3;
@@ -116,14 +112,10 @@ body .grid_container_css_font {
   width: 100%;
   margin: auto;
   padding: 0;
-  border: #000 solid thin;
   grid-gap: 0.99%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2fr repeat(3, -webkit-max-content) 0.5fr;
   grid-template-rows: 2fr repeat(3, max-content) 0.5fr;
-}
-body .grid_container_css_font div {
-  border: #000 thin solid;
 }
 body .grid_container_css_font .ref1 {
   grid-column: 3/4;
@@ -214,13 +206,9 @@ body .grid_container_css_block {
   width: 100%;
   margin: auto;
   padding: 0;
-  border: #000 solid thin;
   grid-gap: 1%;
   grid-template-rows: 1fr 1fr;
   grid-template-colums: repeat(4, 1fr);
-}
-body .grid_container_css_block div {
-  border: #000 solid thin;
 }
 body .grid_container_css_block .text1 {
   grid-column: 2/3;
